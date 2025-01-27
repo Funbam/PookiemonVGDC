@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pookiemonName: Devowend
-  sprite: {fileID: 21300000, guid: 603a11048b02a5241ba49282c94ce7b0, type: 3}
+  sprite: {fileID: 21300000, guid: 084030c9bc835de4eb60e975cc26d29d, type: 3}
   spriteRenderer: {fileID: 3957436763054878614}
   baseStats:
     m_keys: 000000000100000002000000030000000400000005000000
