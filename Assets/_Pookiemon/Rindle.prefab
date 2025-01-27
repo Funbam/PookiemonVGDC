@@ -24,6 +24,26 @@ PrefabInstance:
       propertyPath: moveName
       value: Knock-Off
       objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: power
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: movePP
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moveName
+      value: Double-Edge
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: damageType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -44,6 +64,14 @@ PrefabInstance:
       propertyPath: pookiemonName
       value: Rindle
       objectReference: {fileID: 0}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[2]
+      value: 
+      objectReference: {fileID: 8588012765753918568}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[3]
+      value: 
+      objectReference: {fileID: 6189762259711276097}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[0]
       value: 80
@@ -115,5 +143,69 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8588012765753918568}
+    - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6189762259711276097}
   m_SourcePrefab: {fileID: 100100000, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+--- !u!114 &452631096294909753 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+  m_PrefabInstance: {fileID: 4964905981555171970}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085401913546889742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d8278da15d42c41afc2138b7c76924, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1085401913546889742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+  m_PrefabInstance: {fileID: 4964905981555171970}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8588012765753918568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085401913546889742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveName: First Impression
+  accuracy: 100
+  user: {fileID: 452631096294909753}
+  type: 11
+  movePP: 10
+  priority: 2
+  damageType: 0
+  power: 90
+  critChance: 0
+--- !u!114 &6189762259711276097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085401913546889742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveName: Rollout
+  accuracy: 90
+  user: {fileID: 452631096294909753}
+  type: 0
+  movePP: 20
+  priority: 0
+  damageType: 0
+  power: 30
+  critChance: 0
