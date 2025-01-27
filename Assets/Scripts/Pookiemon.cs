@@ -161,7 +161,7 @@ public class Pookiemon : MonoBehaviour
         if(RollCrit(attack)) { multiplier *= 1.5f; }
         //STAB
         if(attack.type == type1 || attack.type == type2) { multiplier *= 1.5f; }
-        int damage = (int)(multiplier * (2*LEVEL/5 +2) * attack.POWER * GetStat(Stats.ATTACK) / attacker.GetStat(Stats.DEFENSE));
+        int damage = (int)(multiplier * (2*LEVEL/5 +2) * attack.POWER * attacker.GetStat(Stats.ATTACK) / GetStat(Stats.DEFENSE) / 50);
         Debug.Log("Damage: " + damage);
         int healthLost = Mathf.Clamp(damage, currentHealth, damage);
         currentHealth -= damage;
@@ -176,7 +176,22 @@ public class Pookiemon : MonoBehaviour
         if (RollCrit(attack)) { multiplier *= 1.5f; }
         //STAB
         if (attack.type == type1 || attack.type == type2) { multiplier *= 1.5f; }
-        int damage = (int)(multiplier * (2 * LEVEL / 5 + 2) * attack.POWER * GetStat(Stats.SPATTACK) / attacker.GetStat(Stats.SPDEFENSE) / 50);
+        int damage = (int)(multiplier * (2 * LEVEL / 5 + 2) * attack.POWER * attacker.GetStat(Stats.SPATTACK) / GetStat(Stats.SPDEFENSE) / 50);
+        Debug.Log("Damage: " + damage);
+        int healthLost = Mathf.Clamp(damage, currentHealth, damage);
+        currentHealth -= damage;
+        return healthLost;
+    }
+
+    public int TakeBodyPressDamage(Pookiemon attacker, Attack attack)
+    {
+        //Super Effectiveness
+        float multiplier = GetMultiplier(attack.type, type1, type2);
+        //Crit
+        if (RollCrit(attack)) { multiplier *= 1.5f; }
+        //STAB
+        if (attack.type == type1 || attack.type == type2) { multiplier *= 1.5f; }
+        int damage = (int)(multiplier * (2 * LEVEL / 5 + 2) * attack.POWER * attacker.GetStat(Stats.DEFENSE) / GetStat(Stats.DEFENSE) / 50);
         Debug.Log("Damage: " + damage);
         int healthLost = Mathf.Clamp(damage, currentHealth, damage);
         currentHealth -= damage;
