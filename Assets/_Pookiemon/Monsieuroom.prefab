@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4964905981555171970
+--- !u!1001 &1982633999492818699
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,107 +10,67 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: power
-      value: 65
-      objectReference: {fileID: 0}
-    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: movePP
-      value: 20
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
-      value: Knock-Off
+      value: Sludge Bomb
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: power
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: movePP
-      value: 20
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
-      value: Double-Edge
-      objectReference: {fileID: 0}
-    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: damageType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_Size.x
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_Size.y
-      value: 16
+      value: Spore
       objectReference: {fileID: 0}
     - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4ada44afb61a71146aa5cc3bb6332307, type: 3}
-    - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 2cf23c03327bbb34e94e74f2687a916f, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type1
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type2
-      value: 11
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4ada44afb61a71146aa5cc3bb6332307, type: 3}
+      objectReference: {fileID: 21300000, guid: 2cf23c03327bbb34e94e74f2687a916f, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: pookiemonName
-      value: Rindle
+      value: Monsieuroom
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: moves.Array.data[2]
-      value: 
-      objectReference: {fileID: 8588012765753918568}
-    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: moves.Array.data[3]
-      value: 
-      objectReference: {fileID: 6189762259711276097}
-    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[0]
-      value: 80
+      value: 118
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[1]
-      value: 160
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[2]
-      value: 65
+      value: 89
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[3]
-      value: 40
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[4]
-      value: 65
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[5]
-      value: 90
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_Name
-      value: Rindle
+      value: Monsieuroom
       objectReference: {fileID: 0}
     - target: {fileID: 5881426803419197635, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -155,69 +115,5 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8588012765753918568}
-    - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6189762259711276097}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
---- !u!114 &452631096294909753 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-  m_PrefabInstance: {fileID: 4964905981555171970}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085401913546889742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d8278da15d42c41afc2138b7c76924, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1085401913546889742 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-  m_PrefabInstance: {fileID: 4964905981555171970}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8588012765753918568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085401913546889742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveName: First Impression
-  accuracy: 100
-  user: {fileID: 452631096294909753}
-  type: 11
-  movePP: 10
-  priority: 2
-  damageType: 0
-  power: 90
-  critChance: 0
---- !u!114 &6189762259711276097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085401913546889742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveName: Rollout
-  accuracy: 90
-  user: {fileID: 452631096294909753}
-  type: 0
-  movePP: 20
-  priority: 0
-  damageType: 0
-  power: 30
-  critChance: 0
