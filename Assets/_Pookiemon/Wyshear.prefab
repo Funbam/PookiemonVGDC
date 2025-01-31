@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4964905981555171970
+--- !u!1001 &8225066659196657986
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,108 +9,64 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: type
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: power
-      value: 65
-      objectReference: {fileID: 0}
-    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: movePP
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
-      value: Knock-Off
+      value: Sceech
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: power
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: movePP
-      value: 20
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
-      value: Double-Edge
-      objectReference: {fileID: 0}
-    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: damageType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_Size.x
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_Size.y
-      value: 16
+      value: Dragon Pulse
       objectReference: {fileID: 0}
     - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4ada44afb61a71146aa5cc3bb6332307, type: 3}
-    - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: d6a5c0112322e9047a632e13c657e318, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type1
-      value: 0
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type2
-      value: 11
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4ada44afb61a71146aa5cc3bb6332307, type: 3}
+      objectReference: {fileID: 21300000, guid: d6a5c0112322e9047a632e13c657e318, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: pookiemonName
-      value: Rindle
+      value: Wyshear
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: moves.Array.data[2]
-      value: 
-      objectReference: {fileID: 8588012765753918568}
-    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: moves.Array.data[3]
-      value: 
-      objectReference: {fileID: 6189762259711276097}
-    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[0]
-      value: 80
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[1]
-      value: 160
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[2]
-      value: 65
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[3]
-      value: 40
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[4]
-      value: 65
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[5]
-      value: 90
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_Name
-      value: Rindle
+      value: Wyshear
       objectReference: {fileID: 0}
     - target: {fileID: 5881426803419197635, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -158,66 +114,63 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8588012765753918568}
+      addedObject: {fileID: 1131483628260176390}
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6189762259711276097}
+      addedObject: {fileID: 5395068368310879728}
   m_SourcePrefab: {fileID: 100100000, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
---- !u!114 &452631096294909753 stripped
+--- !u!114 &3498097027507135737 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-  m_PrefabInstance: {fileID: 4964905981555171970}
+  m_PrefabInstance: {fileID: 8225066659196657986}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085401913546889742}
+  m_GameObject: {fileID: 4166870244857502158}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5d8278da15d42c41afc2138b7c76924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1085401913546889742 stripped
+--- !u!1 &4166870244857502158 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-  m_PrefabInstance: {fileID: 4964905981555171970}
+  m_PrefabInstance: {fileID: 8225066659196657986}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8588012765753918568
+--- !u!114 &1131483628260176390
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085401913546889742}
+  m_GameObject: {fileID: 4166870244857502158}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveName: First Impression
+  moveName: X-Scissor
   accuracy: 100
-  user: {fileID: 452631096294909753}
+  user: {fileID: 3498097027507135737}
   type: 11
-  movePP: 10
-  priority: 2
-  damageType: 0
-  power: 90
-  critChance: 0
---- !u!114 &6189762259711276097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085401913546889742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveName: Rollout
-  accuracy: 90
-  user: {fileID: 452631096294909753}
-  type: 0
   movePP: 20
   priority: 0
   damageType: 0
-  power: 30
+  power: 0
   critChance: 0
+--- !u!114 &5395068368310879728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4166870244857502158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a61d95fb8894b44a92662aa335d646e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveName: Swords Dance
+  accuracy: 0
+  user: {fileID: 3498097027507135737}
+  type: 14
+  movePP: 10
+  priority: 0
