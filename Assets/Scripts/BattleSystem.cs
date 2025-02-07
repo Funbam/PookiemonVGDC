@@ -28,7 +28,9 @@ public class BattleSystem : MonoBehaviour
 
     public static event Action TurnStart;
     public static event Action TurnEnd;
-    private AudioSource audioSource;
+ 
+
+
 
     private void Awake()
     {
@@ -41,9 +43,11 @@ public class BattleSystem : MonoBehaviour
     private void Start()
     {
         currentState = BattleState.START;
-        audioSource = GetComponent<AudioSource>();
+
 
         StartCoroutine(SetupBattle());
+
+
     }
 
     private IEnumerator SetupBattle()
@@ -54,11 +58,19 @@ public class BattleSystem : MonoBehaviour
 
         playerHUD.ShowNarration("Let the Pookiemon battle begin!", true);
 
+        yield return new WaitForSeconds(1f);
+        player1.Pookiemon.playPookiemonSpawn();
+        yield return new WaitForSeconds(player1.Pookiemon.pookiemonCrySFX.length);
+        player2.Pookiemon.playPookiemonSpawn();
+
         yield return new WaitForSeconds(setUpBattleTime);
 
         currentState = BattleState.START;
+        
         NextPhase();
     }
+
+   
 
     private void PlayerTurn()
     {
@@ -112,8 +124,7 @@ public class BattleSystem : MonoBehaviour
                 currentState = BattleState.P1SWITCH;
                 if (player1.Pookiemon.IsDead)
                 {
-                    if (player1.Pookiemon.PookiemonDieSFX != null && audioSource != null)
-                        audioSource.PlayOneShot(player1.Pookiemon.PookiemonDieSFX);
+                    player1.Pookiemon.playPookiemonDie();
                     OnPookiemonSelect();
                 }
                 else
@@ -126,8 +137,7 @@ public class BattleSystem : MonoBehaviour
                 currentState = BattleState.P2SWITCH;
                 if (player2.Pookiemon.IsDead)
                 {
-                    if (player2.Pookiemon.PookiemonDieSFX != null && audioSource != null)
-                        audioSource.PlayOneShot(player2.Pookiemon.PookiemonDieSFX);
+                    player2.Pookiemon.playPookiemonDie();
                     OnPookiemonSelect();
                 }
                 else
@@ -141,6 +151,10 @@ public class BattleSystem : MonoBehaviour
                 PlayerTurn();
                 break;
         }
+    }
+    private IEnumerator DelayedFunction()
+    {
+        yield return new WaitForSeconds(2f);
     }
 
     // called after the battle is over

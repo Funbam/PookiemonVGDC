@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 4805044183930422715}
   - component: {fileID: 592307183121248466}
   - component: {fileID: 1896217967703667165}
+  - component: {fileID: 2813807389586241108}
   m_Layer: 0
   m_Name: _BasePookiemon
   m_TagString: Untagged
@@ -146,8 +147,8 @@ MonoBehaviour:
   - {fileID: 1896217967703667165}
   accuracyStage: 0
   cantMove: 0
-  pookiemonSpawnSFX: {fileID: 8300000, guid: 871c867a6e944fa4bbacd133b1b984cc, type: 3}
-  pookiemonDieSFX: {fileID: 8300000, guid: 871c867a6e944fa4bbacd133b1b984cc, type: 3}
+  pookiemonCrySFX: {fileID: 8300000, guid: 871c867a6e944fa4bbacd133b1b984cc, type: 3}
+  cryAudioSource: {fileID: 2813807389586241108}
 --- !u!114 &592307183121248466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,3 +191,99 @@ MonoBehaviour:
   damageType: 1
   power: 8000
   critChance: 0
+--- !u!82 &2813807389586241108
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5473840459651692684}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

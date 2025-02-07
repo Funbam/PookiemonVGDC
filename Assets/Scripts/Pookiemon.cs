@@ -66,17 +66,43 @@ public class Pookiemon : MonoBehaviour
     [HideInInspector] public bool cantMove = false;
 
     [Header("Audio")]
-    [SerializeField] private AudioClip pookiemonSpawnSFX;
-    [SerializeField] private AudioClip pookiemonDieSFX;
-    private AudioSource audioSource;
+    [SerializeField] public AudioClip pookiemonCrySFX;
+    [SerializeField] private AudioSource cryAudioSource;
+    
+
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        cryAudioSource = GetComponent<AudioSource>();
     }
 
-    public AudioClip PookiemonSpawnSFX => pookiemonSpawnSFX;
-    public AudioClip PookiemonDieSFX => pookiemonDieSFX;
+
+    public void playPookiemonSpawn()
+    {
+        if (cryAudioSource != null && pookiemonCrySFX != null)
+        {
+            cryAudioSource.clip = pookiemonCrySFX;
+            cryAudioSource.Play();
+        }
+        else
+        {
+            Debug.Log("Something is Null");
+        }
+
+    }
+
+    public void playPookiemonDie()
+    {
+        if (cryAudioSource != null && pookiemonCrySFX != null)
+        {
+            cryAudioSource.clip = pookiemonCrySFX;
+            cryAudioSource.pitch = Mathf.Pow(1.06f, -6);
+            cryAudioSource.Play();
+        } else
+        {
+            Debug.Log("Something is Null");
+        }
+    }
 
     public static float GetMultiplier(Types attackType, Types defend1, Types defender2)
     {
