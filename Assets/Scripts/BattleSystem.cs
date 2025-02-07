@@ -112,7 +112,7 @@ public class BattleSystem : MonoBehaviour
                 currentState = BattleState.P1SWITCH;
                 if (player1.Pookiemon.IsDead)
                 {
-                    if (player1.Pookiemon.PookiemonDieSFX != null)
+                    if (player1.Pookiemon.PookiemonDieSFX != null && audioSource != null)
                         audioSource.PlayOneShot(player1.Pookiemon.PookiemonDieSFX);
                     OnPookiemonSelect();
                 }
@@ -126,7 +126,7 @@ public class BattleSystem : MonoBehaviour
                 currentState = BattleState.P2SWITCH;
                 if (player2.Pookiemon.IsDead)
                 {
-                    if (player2.Pookiemon.PookiemonDieSFX != null)
+                    if (player2.Pookiemon.PookiemonDieSFX != null && audioSource != null)
                         audioSource.PlayOneShot(player2.Pookiemon.PookiemonDieSFX);
                     OnPookiemonSelect();
                 }

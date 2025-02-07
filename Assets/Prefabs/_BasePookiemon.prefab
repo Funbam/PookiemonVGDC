@@ -146,6 +146,8 @@ MonoBehaviour:
   - {fileID: 1896217967703667165}
   accuracyStage: 0
   cantMove: 0
+  pookiemonSpawnSFX: {fileID: 8300000, guid: 871c867a6e944fa4bbacd133b1b984cc, type: 3}
+  pookiemonDieSFX: {fileID: 8300000, guid: 871c867a6e944fa4bbacd133b1b984cc, type: 3}
 --- !u!114 &592307183121248466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,5 +188,5 @@ MonoBehaviour:
   movePP: 50
   priority: 0
   damageType: 1
-  power: 80
+  power: 8000
   critChance: 0
