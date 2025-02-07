@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3757260518986216489
+--- !u!1001 &4191841780983174636
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,115 +10,119 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type
-      value: 16
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: user
+      value: 
+      objectReference: {fileID: 8683674391443034199}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: power
-      value: 0
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: movePP
-      value: 15
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: accuracy
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
-      value: Iron Defense
+      value: Lick
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: critChance
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type
-      value: 16
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: user
+      value: 
+      objectReference: {fileID: 8683674391443034199}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: power
-      value: 0
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: movePP
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: accuracy
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
-      value: Heavy Slam
+      value: Dragon Pulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: critChance
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: damageType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_Size.x
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_Size.y
-      value: 16
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 6fb46caa4155e4144946c89275e10eb1, type: 3}
-    - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_DrawMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: f33cc7be70ab4ce4487f4ccc01093119, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type1
-      value: 6
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type2
-      value: 16
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 6fb46caa4155e4144946c89275e10eb1, type: 3}
+      objectReference: {fileID: 21300000, guid: f33cc7be70ab4ce4487f4ccc01093119, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: pookiemonName
-      value: Crushield
+      value: Gechroma
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[2]
+      value: 
+      objectReference: {fileID: 2956095414091337210}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[3]
+      value: 
+      objectReference: {fileID: 7835134172206569712}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: baseStats.m_values.Array.data[0]
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[1]
-      value: 30
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[2]
-      value: 200
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[3]
-      value: 30
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[4]
-      value: 120
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[5]
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_Name
-      value: Crushield
-      objectReference: {fileID: 0}
-    - target: {fileID: 5827315670632273185, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5827315670632273185, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
+      value: Gechroma
       objectReference: {fileID: 0}
     - target: {fileID: 5881426803419197635, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -166,66 +170,66 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 145024871380562066}
+      addedObject: {fileID: 2956095414091337210}
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 256143060865354344}
+      addedObject: {fileID: 7835134172206569712}
   m_SourcePrefab: {fileID: 100100000, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
---- !u!114 &8541792145269272978 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-  m_PrefabInstance: {fileID: 3757260518986216489}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9210569789338471589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d8278da15d42c41afc2138b7c76924, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &9210569789338471589 stripped
+--- !u!1 &8204033526569872736 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-  m_PrefabInstance: {fileID: 3757260518986216489}
+  m_PrefabInstance: {fileID: 4191841780983174636}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &145024871380562066
+--- !u!114 &2956095414091337210
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9210569789338471589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c78d10f2f85f730438c9347d4607e670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveName: Body Press
-  accuracy: 100
-  user: {fileID: 8541792145269272978}
-  type: 6
-  movePP: 10
-  priority: 0
-  damageType: 0
-  power: 80
-  critChance: 0
---- !u!114 &256143060865354344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9210569789338471589}
+  m_GameObject: {fileID: 8204033526569872736}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveName: Guard
+  moveName: Psybeam
   accuracy: 100
-  user: {fileID: 8541792145269272978}
-  type: 6
+  user: {fileID: 8683674391443034199}
+  type: 10
+  movePP: 20
+  priority: 0
+  damageType: 1
+  power: 65
+  critChance: 4
+--- !u!114 &7835134172206569712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8204033526569872736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveName: Dragon Tail
+  accuracy: 90
+  user: {fileID: 8683674391443034199}
+  type: 14
   movePP: 10
-  priority: 2
+  priority: 0
   damageType: 0
-  power: 0
-  critChance: 0
+  power: 60
+  critChance: 4
+--- !u!114 &8683674391443034199 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+  m_PrefabInstance: {fileID: 4191841780983174636}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8204033526569872736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d8278da15d42c41afc2138b7c76924, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
