@@ -65,6 +65,19 @@ public class Pookiemon : MonoBehaviour
 
     [HideInInspector] public bool cantMove = false;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip pookiemonSpawnSFX;
+    [SerializeField] private AudioClip pookiemonDieSFX;
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    public AudioClip PookiemonSpawnSFX => pookiemonSpawnSFX;
+    public AudioClip PookiemonDieSFX => pookiemonDieSFX;
+
     public static float GetMultiplier(Types attackType, Types defend1, Types defender2)
     {
         // Base multiplier for the first type

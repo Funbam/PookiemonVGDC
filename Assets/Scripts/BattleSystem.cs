@@ -28,6 +28,7 @@ public class BattleSystem : MonoBehaviour
 
     public static event Action TurnStart;
     public static event Action TurnEnd;
+    private AudioSource audioSource;
 
     private void Awake()
     {
@@ -40,6 +41,7 @@ public class BattleSystem : MonoBehaviour
     private void Start()
     {
         currentState = BattleState.START;
+        audioSource = GetComponent<AudioSource>();
 
         StartCoroutine(SetupBattle());
     }
@@ -110,6 +112,7 @@ public class BattleSystem : MonoBehaviour
                 currentState = BattleState.P1SWITCH;
                 if (player1.Pookiemon.IsDead)
                 {
+                    audioSource.PlayOneShot(player1.Pookiemon.PookiemonDieSFX);
                     OnPookiemonSelect();
                 }
                 else
@@ -122,6 +125,7 @@ public class BattleSystem : MonoBehaviour
                 currentState = BattleState.P2SWITCH;
                 if (player2.Pookiemon.IsDead)
                 {
+                    audioSource.PlayOneShot(player2.Pookiemon.PookiemonDieSFX);
                     OnPookiemonSelect();
                 }
                 else
