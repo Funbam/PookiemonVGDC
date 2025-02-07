@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3757260518986216489
+--- !u!1001 &5450554875002350656
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,115 +10,119 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type
-      value: 16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: user
+      value: 
+      objectReference: {fileID: 651527700815751675}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: power
-      value: 0
+      value: 95
       objectReference: {fileID: 0}
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: movePP
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: accuracy
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
-      value: Iron Defense
+      value: Foul Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: critChance
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type
-      value: 16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: user
+      value: 
+      objectReference: {fileID: 651527700815751675}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: power
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: movePP
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: accuracy
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
-      value: Heavy Slam
+      value: Fake Out
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: critChance
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: damageType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_Size.x
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_Size.y
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 6fb46caa4155e4144946c89275e10eb1, type: 3}
-    - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_DrawMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 4f83481bf68846843820b5633e4137be, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type1
-      value: 6
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type2
-      value: 16
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 6fb46caa4155e4144946c89275e10eb1, type: 3}
+      objectReference: {fileID: 21300000, guid: 4f83481bf68846843820b5633e4137be, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: pookiemonName
-      value: Crushield
+      value: Implet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[2]
+      value: 
+      objectReference: {fileID: 7197415148021304017}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[3]
+      value: 
+      objectReference: {fileID: 6156449379148697931}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: baseStats.m_values.Array.data[0]
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[1]
-      value: 30
+      value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[2]
-      value: 200
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[3]
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[4]
-      value: 120
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[5]
-      value: 20
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_Name
-      value: Crushield
-      objectReference: {fileID: 0}
-    - target: {fileID: 5827315670632273185, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5827315670632273185, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
+      value: Implet
       objectReference: {fileID: 0}
     - target: {fileID: 5881426803419197635, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -166,66 +170,63 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 145024871380562066}
+      addedObject: {fileID: 7197415148021304017}
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 256143060865354344}
+      addedObject: {fileID: 6156449379148697931}
   m_SourcePrefab: {fileID: 100100000, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
---- !u!114 &8541792145269272978 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-  m_PrefabInstance: {fileID: 3757260518986216489}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9210569789338471589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d8278da15d42c41afc2138b7c76924, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &9210569789338471589 stripped
+--- !u!1 &23290004213781708 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-  m_PrefabInstance: {fileID: 3757260518986216489}
+  m_PrefabInstance: {fileID: 5450554875002350656}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &145024871380562066
+--- !u!114 &7197415148021304017
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9210569789338471589}
+  m_GameObject: {fileID: 23290004213781708}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c78d10f2f85f730438c9347d4607e670, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a61d95fb8894b44a92662aa335d646e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveName: Body Press
+  moveName: Hone Claws
   accuracy: 100
-  user: {fileID: 8541792145269272978}
-  type: 6
-  movePP: 10
+  user: {fileID: 651527700815751675}
+  type: 15
+  movePP: 15
   priority: 0
-  damageType: 0
-  power: 80
-  critChance: 0
---- !u!114 &256143060865354344
+--- !u!114 &6156449379148697931
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9210569789338471589}
+  m_GameObject: {fileID: 23290004213781708}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveName: Guard
+  moveName: Night Slash
   accuracy: 100
-  user: {fileID: 8541792145269272978}
-  type: 6
-  movePP: 10
-  priority: 2
+  user: {fileID: 651527700815751675}
+  type: 0
+  movePP: 70
+  priority: 0
   damageType: 0
-  power: 0
-  critChance: 0
+  power: 70
+  critChance: 13
+--- !u!114 &651527700815751675 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+  m_PrefabInstance: {fileID: 5450554875002350656}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23290004213781708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d8278da15d42c41afc2138b7c76924, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

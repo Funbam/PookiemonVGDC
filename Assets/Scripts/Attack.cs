@@ -14,7 +14,7 @@ public class Attack : Move
     [SerializeField] private AttackType damageType;
     //Moves base damage amount
     [SerializeField] protected int power;
-    [Range(0,100)]public int critChance;
+    [Range(0,100)]public int critChance = 4;
 
     public int POWER { get { return power; } }
 
