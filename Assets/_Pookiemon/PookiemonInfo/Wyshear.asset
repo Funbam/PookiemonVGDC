@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: d6a5c0112322e9047a632e13c657e318, type: 3}
   pookiemonName: Wyshear
-  pookiemonTitle: 
+  pookiemonTitle: Blade Wing
   type1: 14
   type2: 16
-  height: 1
-  weight: 1
-  habitat: 0
-  description: 
+  height: 1.2
+  weight: 50
+  habitat: 5
+  description: "Only the tip of the wing is made of metal, but the weight is enough
+    to make flying difficult. Because of this, it\u2019s more of a glider than a
+    flier, but it is also agile and can use its wings to climb surfaces."
   baseStats:
     m_keys: 000000000100000002000000030000000400000005000000
     m_values: 4b000000780000004b000000320000004b00000069000000

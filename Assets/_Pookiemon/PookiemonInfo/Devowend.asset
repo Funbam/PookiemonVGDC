@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 084030c9bc835de4eb60e975cc26d29d, type: 3}
   pookiemonName: Devowend
-  pookiemonTitle: 
+  pookiemonTitle: Skull
   type1: 13
   type2: 15
   height: 1.6
