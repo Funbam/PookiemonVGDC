@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: f33cc7be70ab4ce4487f4ccc01093119, type: 3}
   pookiemonName: Gechroma
-  pookiemonTitle: 
+  pookiemonTitle: Chromatic
   type1: 14
   type2: 18
-  height: 1
-  weight: 1
-  habitat: 0
-  description: 
+  height: 0.3
+  weight: 6.8
+  habitat: 1
+  description: It flashes bright colors on its body to confuse enemies. It can strike
+    rapidly and at great length with both its long tail and sticky tongue.
   baseStats:
     m_keys: 000000000100000002000000030000000400000005000000
     m_values: 460000005a000000460000005a0000005000000064000000

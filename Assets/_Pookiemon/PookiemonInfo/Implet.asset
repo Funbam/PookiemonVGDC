@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 4f83481bf68846843820b5633e4137be, type: 3}
   pookiemonName: Implet
-  pookiemonTitle: 
+  pookiemonTitle: Sneaky Imp
   type1: 15
   type2: 18
-  height: 1
-  weight: 1
-  habitat: 0
-  description: 
+  height: 0.3
+  weight: 3.4
+  habitat: 7
+  description: It likes to steal silverware to use as tools and weapons. It often
+    fails to nick metal tools and has to fish used single-use utensils out of the
+    trash.
   baseStats:
     m_keys: 000000000100000002000000030000000400000005000000
     m_values: 3c0000008200000050000000320000006400000050000000
