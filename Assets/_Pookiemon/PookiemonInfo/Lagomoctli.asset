@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 7104c8f4f8d0f04409748cb82cda035f, type: 3}
   pookiemonName: Lagomoctli
-  pookiemonTitle: 
+  pookiemonTitle: Sap Hare
   type1: 1
   type2: 17
-  height: 1
-  weight: 1
-  habitat: 0
-  description: 
+  height: 0.38
+  weight: 4
+  habitat: 6
+  description: Feeding off of agave and other local flora, it secretes the excess
+    nutrients off their back. This bubbly foam is highly flammable and sticks to
+    nearby surfaces, although it is a delicacy due to its taste.
   baseStats:
     m_keys: 000000000100000002000000030000000400000005000000
     m_values: 5d000000320000005f0000005a0000003c00000070000000

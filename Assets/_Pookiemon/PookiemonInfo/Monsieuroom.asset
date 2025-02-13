@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 2cf23c03327bbb34e94e74f2687a916f, type: 3}
   pookiemonName: Monsieuroom
-  pookiemonTitle: 
+  pookiemonTitle: Shroom Gentleman
   type1: 0
   type2: 7
   height: 1
-  weight: 1
-  habitat: 0
-  description: 
+  weight: 45.4
+  habitat: 7
+  description: This pookimon has a bourgeois laugh. It will release lethargic spores
+    to poison its enemy if it feels threatened. While doing that, Monsieuroom remains
+    its composure.
   baseStats:
     m_keys: 000000000100000002000000030000000400000005000000
     m_values: 760000005000000059000000500000005500000030000000

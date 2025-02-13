@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 5720b28b005267b4e88f6d04253666ed, type: 3}
   pookiemonName: Zemin
-  pookiemonTitle: 
+  pookiemonTitle: Head Beetle
   type1: 11
   type2: 18
-  height: 1
-  weight: 1
+  height: 0.3
+  weight: 6.8
   habitat: 0
-  description: 
+  description: ALEXANDER
   baseStats:
     m_keys: 000000000100000002000000030000000400000005000000
     m_values: 50000000640000007d0000000f0000004600000064000000

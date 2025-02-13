@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: c0343296ed393ff47b34f7cadea8d129, type: 3}
   pookiemonName: Mafirat
-  pookiemonTitle: 
+  pookiemonTitle: Mob Rat
   type1: 15
   type2: 0
-  height: 1
-  weight: 1
-  habitat: 0
-  description: 
+  height: 0.4
+  weight: 1.2
+  habitat: 7
+  description: They travel in large packs to gang up on larger Pookiemon in coordinated
+    attacks. When isolated from their pack, they will fire their gun to ward off
+    predators.
   baseStats:
     m_keys: 000000000100000002000000030000000400000005000000
     m_values: 640000006e00000046000000640000004600000032000000
