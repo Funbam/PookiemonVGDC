@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 4ada44afb61a71146aa5cc3bb6332307, type: 3}
   pookiemonName: Rindle
-  pookiemonTitle: Water Skipper
+  pookiemonTitle: Cheese Skipper
   type1: 0
   type2: 11
-  height: 0.02
-  weight: 0.05
+  height: 0.1
+  weight: 0.1
   habitat: 0
   description: This little water strider got bored of its pond so it started leg
     training in a cheese wheel. While commonly found as elementary school class pets,
