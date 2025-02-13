@@ -85,9 +85,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: f33cc7be70ab4ce4487f4ccc01093119, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: pookiemonData
+      value: 
+      objectReference: {fileID: 11400000, guid: de4bbfb675f5d8f4dade9cbd35685aa5, type: 2}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: pookiemonName
       value: Gechroma
       objectReference: {fileID: 0}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: cryAudioSource
+      value: 
+      objectReference: {fileID: 2098905069629776824}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: pookiemonCrySFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 62f329420dde12a41bacb69e41c79df7, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moves.Array.data[2]
       value: 
@@ -175,6 +187,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 7835134172206569712}
   m_SourcePrefab: {fileID: 100100000, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+--- !u!82 &2098905069629776824 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2813807389586241108, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+  m_PrefabInstance: {fileID: 4191841780983174636}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8204033526569872736 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}

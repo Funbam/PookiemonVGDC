@@ -85,9 +85,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 6fb46caa4155e4144946c89275e10eb1, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: pookiemonData
+      value: 
+      objectReference: {fileID: 11400000, guid: b41376ac171ae4b49b8c0308bd39f630, type: 2}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: pookiemonName
       value: Crushield
       objectReference: {fileID: 0}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: cryAudioSource
+      value: 
+      objectReference: {fileID: 1380597792378831485}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: pookiemonCrySFX
+      value: 
+      objectReference: {fileID: 8300000, guid: a2f6d7418235a074ab1288a67c49b6bc, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[1]
       value: 30
@@ -171,6 +183,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 256143060865354344}
   m_SourcePrefab: {fileID: 100100000, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+--- !u!82 &1380597792378831485 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2813807389586241108, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+  m_PrefabInstance: {fileID: 3757260518986216489}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8541792145269272978 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}

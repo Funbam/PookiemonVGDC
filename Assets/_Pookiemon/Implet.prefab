@@ -85,9 +85,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 4f83481bf68846843820b5633e4137be, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: pookiemonData
+      value: 
+      objectReference: {fileID: 11400000, guid: be0e88e79e5a32c49b0ab3c20c1fbd4a, type: 2}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: pookiemonName
       value: Implet
       objectReference: {fileID: 0}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: cryAudioSource
+      value: 
+      objectReference: {fileID: 7829758840347417108}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: pookiemonCrySFX
+      value: 
+      objectReference: {fileID: 8300000, guid: a642bfe4f4b52fb4aa3c0964be0060ba, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moves.Array.data[2]
       value: 
@@ -230,3 +242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d8278da15d42c41afc2138b7c76924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &7829758840347417108 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2813807389586241108, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+  m_PrefabInstance: {fileID: 5450554875002350656}
+  m_PrefabAsset: {fileID: 0}

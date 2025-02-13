@@ -73,9 +73,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 4ada44afb61a71146aa5cc3bb6332307, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: pookiemonData
+      value: 
+      objectReference: {fileID: 11400000, guid: fe15cfaa403b0fe42a42ead649f9037f, type: 2}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: pookiemonName
       value: Rindle
       objectReference: {fileID: 0}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: cryAudioSource
+      value: 
+      objectReference: {fileID: 7199643125540115670}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: pookiemonCrySFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 0bf9dfdcc1915184abda4368f393aab6, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moves.Array.data[2]
       value: 
@@ -221,3 +233,8 @@ MonoBehaviour:
   damageType: 0
   power: 30
   critChance: 0
+--- !u!82 &7199643125540115670 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2813807389586241108, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+  m_PrefabInstance: {fileID: 4964905981555171970}
+  m_PrefabAsset: {fileID: 0}

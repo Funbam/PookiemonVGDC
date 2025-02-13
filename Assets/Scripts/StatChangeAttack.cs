@@ -28,13 +28,13 @@ public class StatChangeAttack : Attack
             {
                target.ApplyStatChange(effect.statToMod, effect.increment);
                 string msg = effect.increment > 0 ? "increased!" : "decreased! ";
-                effectChanges += target.pookiemonName + "'s " + effect.statToMod.ToString() + " has " + msg;
+                effectChanges += target.PookiemonData.pookiemonName + "'s " + effect.statToMod.ToString() + " has " + msg;
             }
                 }
         if (accuracyChange != 0) {
             target.ApplyAccuracyChange(accuracyChange);
             string msg = accuracyChange > 0 ? "increased! " : "decreased! ";
-            effectChanges += target.pookiemonName + "'s " + " accuracy has " + msg;
+            effectChanges += target.PookiemonData.pookiemonName + "'s " + " accuracy has " + msg;
         }
 
         return effectChanges;

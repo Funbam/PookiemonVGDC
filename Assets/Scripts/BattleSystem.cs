@@ -29,9 +29,6 @@ public class BattleSystem : MonoBehaviour
     public static event Action TurnStart;
     public static event Action TurnEnd;
  
-
-
-
     private void Awake()
     {
         if (instance != null)
@@ -43,11 +40,7 @@ public class BattleSystem : MonoBehaviour
     private void Start()
     {
         currentState = BattleState.START;
-
-
         StartCoroutine(SetupBattle());
-
-
     }
 
     private IEnumerator SetupBattle()
@@ -60,7 +53,7 @@ public class BattleSystem : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
         player1.Pookiemon.playPookiemonSpawn();
-        yield return new WaitForSeconds(player1.Pookiemon.pookiemonCrySFX.length);
+        yield return new WaitForSeconds(player1.Pookiemon.PookiemonData.pookiemonCrySFX.length);
         player2.Pookiemon.playPookiemonSpawn();
 
         yield return new WaitForSeconds(setUpBattleTime);
@@ -74,7 +67,7 @@ public class BattleSystem : MonoBehaviour
 
     private void PlayerTurn()
     {
-        playerHUD.ShowActionPrompt($"What will {currentPlayer.Pookiemon.pookiemonName.ToUpper()} do?");
+        playerHUD.ShowActionPrompt($"What will {currentPlayer.Pookiemon.PookiemonData.pookiemonName.ToUpper()} do?");
     }
 
     // sort the move order queue and determine outcomes (calculate things that need to be caclulated) 
@@ -238,8 +231,12 @@ public class BattleSystem : MonoBehaviour
     //Called by the switch in button
     public void OnPookiemonSwitched(Pookiemon p)
     {
-        if (currentState != BattleState.P1TURN && currentState != BattleState.P2TURN)
+        if (currentState != BattleState.P1TURN && currentState != BattleState.P2TURN
+            && currentState != BattleState.P1SWITCH && currentState != BattleState.P2SWITCH)
             return;
+
+        if (currentState == BattleState.P1SWITCH || currentState == BattleState.P2SWITCH)
+            currentPlayer.HealthUi.Init(p);
 
         BattleSwitchAction action = new BattleSwitchAction();
         action.SetAction(currentPlayer, currentPlayer == player1 ? player2 : player1, p);

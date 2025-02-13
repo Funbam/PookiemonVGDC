@@ -36,7 +36,7 @@ public class HUD : MonoBehaviour
 
     public void Back()
     {
-        ShowActionPrompt($"What will {BattleSystem.instance.CurrentPlayer.Pookiemon.pookiemonName.ToUpper()} do?");
+        ShowActionPrompt($"What will {BattleSystem.instance.CurrentPlayer.Pookiemon.PookiemonData.pookiemonName.ToUpper()} do?");
     }
 
     private void HideAll()

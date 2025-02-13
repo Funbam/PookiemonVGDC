@@ -89,9 +89,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: ba5fd4c6306862047a9ba3b6841f10f3, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: pookiemonData
+      value: 
+      objectReference: {fileID: 11400000, guid: d05278925fb5beb41a833d1d28602ef1, type: 2}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: pookiemonName
       value: Lillival
       objectReference: {fileID: 0}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: cryAudioSource
+      value: 
+      objectReference: {fileID: 2270230539672444901}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: pookiemonCrySFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 01464b6cdb1ca5343a01f1cff6b25e48, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moves.Array.data[2]
       value: 
@@ -179,6 +191,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 357868161526545054}
   m_SourcePrefab: {fileID: 100100000, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+--- !u!82 &2270230539672444901 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2813807389586241108, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+  m_PrefabInstance: {fileID: 4075155458590206385}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8321280647044813117 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}

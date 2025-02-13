@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8ad6e9ad518104899297eb39d28ee4, type: 3}
+  m_Name: Devowend
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 084030c9bc835de4eb60e975cc26d29d, type: 3}
+  pookiemonName: Devowend
+  pookiemonTitle: 
+  type1: 13
+  type2: 15
+  height: 1
+  weight: 1
+  habitat: 0
+  description: 
+  baseStats:
+    m_keys: 000000000100000002000000030000000400000005000000
+    m_values: 37000000780000003c000000690000003c00000064000000
+  pookiemonCrySFX: {fileID: 8300000, guid: 5f2b0b82ccae6db4c9d79300a6f0b01b, type: 3}

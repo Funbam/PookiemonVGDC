@@ -25,9 +25,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 081e509d5df8f7d4eb219d1c7cd988c6, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: pookiemonData
+      value: 
+      objectReference: {fileID: 11400000, guid: db6e4fe9f03b36f4cb06e4d26e8e65fe, type: 2}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: pookiemonName
       value: Dittwo
       objectReference: {fileID: 0}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: cryAudioSource
+      value: 
+      objectReference: {fileID: 2622212340213308153}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moves.Array.data[0]
       value: 
@@ -131,6 +139,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 6594865706043688555}
   m_SourcePrefab: {fileID: 100100000, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+--- !u!82 &2622212340213308153 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2813807389586241108, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+  m_PrefabInstance: {fileID: 247520766380698797}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &4738258401771759894 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}

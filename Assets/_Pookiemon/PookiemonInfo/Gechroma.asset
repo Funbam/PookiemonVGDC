@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8ad6e9ad518104899297eb39d28ee4, type: 3}
+  m_Name: Gechroma
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: f33cc7be70ab4ce4487f4ccc01093119, type: 3}
+  pookiemonName: Gechroma
+  pookiemonTitle: 
+  type1: 14
+  type2: 18
+  height: 1
+  weight: 1
+  habitat: 0
+  description: 
+  baseStats:
+    m_keys: 000000000100000002000000030000000400000005000000
+    m_values: 460000005a000000460000005a0000005000000064000000
+  pookiemonCrySFX: {fileID: 8300000, guid: 62f329420dde12a41bacb69e41c79df7, type: 3}

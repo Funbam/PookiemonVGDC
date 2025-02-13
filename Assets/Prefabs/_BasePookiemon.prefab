@@ -132,14 +132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d8278da15d42c41afc2138b7c76924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pookiemonName: BasePookiemon
-  sprite: {fileID: 21300000, guid: 603a11048b02a5241ba49282c94ce7b0, type: 3}
+  pookiemonData: {fileID: 11400000, guid: 4b19cd61477122049a2e7467fb0b9b7b, type: 2}
   spriteRenderer: {fileID: 3957436763054878614}
-  baseStats:
-    m_keys: 000000000100000002000000030000000400000005000000
-    m_values: 640000006400000064000000640000006400000064000000
-  type1: 13
-  type2: 3
   moves:
   - {fileID: 592307183121248466}
   - {fileID: 1896217967703667165}
@@ -147,7 +141,6 @@ MonoBehaviour:
   - {fileID: 1896217967703667165}
   accuracyStage: 0
   cantMove: 0
-  pookiemonCrySFX: {fileID: 8300000, guid: 871c867a6e944fa4bbacd133b1b984cc, type: 3}
   cryAudioSource: {fileID: 2813807389586241108}
 --- !u!114 &592307183121248466
 MonoBehaviour:

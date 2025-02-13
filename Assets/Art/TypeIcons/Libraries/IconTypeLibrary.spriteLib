@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Types
+    m_Hash: 418489908
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Normal
+      m_Hash: 640249298
+      m_Sprite: {fileID: 21300000, guid: 76130b7cc7b9ba84aa95286f32d6a57e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 76130b7cc7b9ba84aa95286f32d6a57e, type: 3}
+    - m_Name: Fire
+      m_Hash: 955033329
+      m_Sprite: {fileID: 21300000, guid: 62b3f251e13d0b64d8a0418b22916952, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 62b3f251e13d0b64d8a0418b22916952, type: 3}
+    - m_Name: Water
+      m_Hash: 988953566
+      m_Sprite: {fileID: 21300000, guid: dec50ea960a687640b621f685b1835be, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: dec50ea960a687640b621f685b1835be, type: 3}
+    - m_Name: Grass
+      m_Hash: 701280503
+      m_Sprite: {fileID: 21300000, guid: 6a66f775f80202041867088228e5c885, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 6a66f775f80202041867088228e5c885, type: 3}
+    - m_Name: Electric
+      m_Hash: 491703804
+      m_Sprite: {fileID: 21300000, guid: 92a4731089054dc4f83c500b2e5f7ac4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 92a4731089054dc4f83c500b2e5f7ac4, type: 3}
+    - m_Name: Ice
+      m_Hash: 855818990
+      m_Sprite: {fileID: 21300000, guid: 08d6c2f741202bf4bae7ba2c5591d434, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 08d6c2f741202bf4bae7ba2c5591d434, type: 3}
+    - m_Name: Fighting
+      m_Hash: 599682029
+      m_Sprite: {fileID: 21300000, guid: 3eff991aac3521045baa5a53581ff617, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 3eff991aac3521045baa5a53581ff617, type: 3}
+    - m_Name: Poison
+      m_Hash: 1054350463
+      m_Sprite: {fileID: 21300000, guid: 9479633c5eba758498ad8cba9b3c65d4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 9479633c5eba758498ad8cba9b3c65d4, type: 3}
+    - m_Name: Ground
+      m_Hash: 542344798
+      m_Sprite: {fileID: 21300000, guid: abd9e9c976d66d8429e91fd9d5b165ae, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: abd9e9c976d66d8429e91fd9d5b165ae, type: 3}
+    - m_Name: Flying
+      m_Hash: 228098037
+      m_Sprite: {fileID: 21300000, guid: 9f6fa9218010902478c440f592fa0c76, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 9f6fa9218010902478c440f592fa0c76, type: 3}
+    - m_Name: Psychic
+      m_Hash: 136243553
+      m_Sprite: {fileID: 21300000, guid: b4979df36284dee44a7e28d3b3e2be7f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: b4979df36284dee44a7e28d3b3e2be7f, type: 3}
+    - m_Name: Bug
+      m_Hash: 230816244
+      m_Sprite: {fileID: 21300000, guid: f9152ec4c9637aa43b663d0006c4f775, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: f9152ec4c9637aa43b663d0006c4f775, type: 3}
+    - m_Name: Rock
+      m_Hash: 393942172
+      m_Sprite: {fileID: 21300000, guid: db1b178851bb2b74da7497bd2c30ea88, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: db1b178851bb2b74da7497bd2c30ea88, type: 3}
+    - m_Name: Ghost
+      m_Hash: 43171749
+      m_Sprite: {fileID: 21300000, guid: 8fa37074ad78f424592f26237fceb469, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 8fa37074ad78f424592f26237fceb469, type: 3}
+    - m_Name: Dragon
+      m_Hash: 544484482
+      m_Sprite: {fileID: 21300000, guid: a19774538139f234d8f904b1a44f2614, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: a19774538139f234d8f904b1a44f2614, type: 3}
+    - m_Name: Dark
+      m_Hash: 994972357
+      m_Sprite: {fileID: 21300000, guid: bc2899b60482aff42a2a45f6a3c8b9c8, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: bc2899b60482aff42a2a45f6a3c8b9c8, type: 3}
+    - m_Name: Steel
+      m_Hash: 257871511
+      m_Sprite: {fileID: 21300000, guid: 76130b7cc7b9ba84aa95286f32d6a57e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 76130b7cc7b9ba84aa95286f32d6a57e, type: 3}
+    - m_Name: Fairy
+      m_Hash: 568191185
+      m_Sprite: {fileID: 21300000, guid: 765018a7600d0374d840b91fe60d92a6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 765018a7600d0374d840b91fe60d92a6, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 18
+  m_PrimaryLibraryGUID: 
+  m_ModificationHash: 638750113986502587
+  m_Version: 1

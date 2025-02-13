@@ -25,7 +25,7 @@ public class PookiemonSelectionButton : MonoBehaviour
     public void Init(Pookiemon pookie)
     {
         pookiemon = pookie;
-        nameText.text = pookie.pookiemonName;
+        nameText.text = pookie.PookiemonData.pookiemonName;
         levelText.text = $"{levelLabel}{Pookiemon.LEVEL}";
 
         healthbar.maxValue = pookie.GetStat(Stats.HP);
@@ -34,7 +34,7 @@ public class PookiemonSelectionButton : MonoBehaviour
 
         healthText.text = $"{healthbar.value}/{healthbar.maxValue}";
 
-        image.sprite = pookie.sprite;
+        image.sprite = pookie.PookiemonData.sprite;
         statusEffect.SetActive(false);
         myButton.interactable = true;
 

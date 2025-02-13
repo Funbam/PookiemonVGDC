@@ -10,7 +10,7 @@ public class BattleSwitchAction : BattleAction
         activePlayer = _active;
         opposingPlayer = _target;
         switchin = _switchin;
-        narrationLine = $"{activePlayer.playerName} switched in {switchin.pookiemonName}.";
+        narrationLine = $"{activePlayer.playerName} switched in {switchin.PookiemonData.pookiemonName}.";
     }
     public override void ApplyAction()
     {

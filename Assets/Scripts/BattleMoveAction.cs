@@ -22,7 +22,7 @@ public class BattleMoveAction : BattleAction
     {
         if (activePlayer.Pookiemon.cantMove)
         {
-            narrationLine = $"{activePlayer.Pookiemon.pookiemonName} can't move!";
+            narrationLine = $"{activePlayer.Pookiemon.PookiemonData.pookiemonName} can't move!";
             return;
         }
 
@@ -30,12 +30,12 @@ public class BattleMoveAction : BattleAction
         {
             string extra = move.UseMove(opposingPlayer.Pookiemon);
             opposingPlayer.HealthUi.SetHealth(opposingPlayer.Pookiemon.CurrentHealth);
-            narrationLine = $"{activePlayer.Pookiemon.pookiemonName} used {move.moveName} on {opposingPlayer.Pookiemon.pookiemonName}. " + extra;
+            narrationLine = $"{activePlayer.Pookiemon.PookiemonData.pookiemonName} used {move.moveName} on {opposingPlayer.Pookiemon.PookiemonData.pookiemonName}. " + extra;
             
         }
         else
         {
-            narrationLine = $"{activePlayer.Pookiemon.pookiemonName} missed.";
+            narrationLine = $"{activePlayer.Pookiemon.PookiemonData.pookiemonName} missed.";
         }
     }
 }

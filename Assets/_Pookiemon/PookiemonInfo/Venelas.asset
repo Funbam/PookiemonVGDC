@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8ad6e9ad518104899297eb39d28ee4, type: 3}
+  m_Name: Venelas
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: a2a604351b4dc5a44b9a19d5714ec358, type: 3}
+  pookiemonName: Venelas
+  pookiemonTitle: 
+  type1: 10
+  type2: 7
+  height: 1
+  weight: 1
+  habitat: 0
+  description: 
+  baseStats:
+    m_keys: 000000000100000002000000030000000400000005000000
+    m_values: 640000007800000032000000280000000a000000b4000000
+  pookiemonCrySFX: {fileID: 8300000, guid: adece61cf01718b4d916f109c6dd225c, type: 3}

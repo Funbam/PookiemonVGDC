@@ -37,9 +37,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: d6a5c0112322e9047a632e13c657e318, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: pookiemonData
+      value: 
+      objectReference: {fileID: 11400000, guid: e93900fb2a30ce54898e2d383d21be5e, type: 2}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: pookiemonName
       value: Wyshear
       objectReference: {fileID: 0}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: cryAudioSource
+      value: 
+      objectReference: {fileID: 6136691491952350998}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: pookiemonCrySFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 70190ade6a588b84b88a4f8d7054f3d1, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[0]
       value: 75
@@ -174,3 +186,8 @@ MonoBehaviour:
   type: 14
   movePP: 10
   priority: 0
+--- !u!82 &6136691491952350998 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2813807389586241108, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+  m_PrefabInstance: {fileID: 8225066659196657986}
+  m_PrefabAsset: {fileID: 0}

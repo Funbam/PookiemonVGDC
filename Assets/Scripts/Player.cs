@@ -1,14 +1,18 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public enum PlayerNumber { P1, P2 }
 public class Player : MonoBehaviour
 {
     private static float battleStationScaleFactor = .25f;
 
     [Header("Team SetUp")]
     public string playerName = "Team _";
-    [SerializeField] private List<GameObject> teamGOs;
+    public PlayerNumber playerNumber;
+    [SerializeField] private Color color;
+    public Color playerColor { get { return color; } }
+    private List<GameObject> teamGOs;
 
     private List<Pookiemon> team;
     public List<Pookiemon> Team { get { return team; } }
@@ -26,6 +30,11 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         team = new List<Pookiemon>();
+    }
+
+    public void SetTeam(List<GameObject> selectedPookiemon)
+    {
+        teamGOs = selectedPookiemon;
     }
 
     public void InitPlayer()

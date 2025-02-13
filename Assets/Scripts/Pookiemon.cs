@@ -21,6 +21,19 @@ public enum Types
     Flying, Psychic, Bug, Rock, Ghost, Dragon, Dark, Steel, Fairy, NULL
 }
 
+public enum Habitats
+{
+    Grassland,
+    Forest,
+    WatersEdge,
+    Sea,
+    Cave,
+    Mountain,
+    RoughTerrain,
+    Urban,
+    Rare
+}
+
 
 public class Pookiemon : MonoBehaviour
 {
@@ -46,16 +59,12 @@ public class Pookiemon : MonoBehaviour
     { 1f,      0.5f,   1f,     1f,     1f,       1f,    2f,      0.5f,   1f,     1f,     1f,     1f,     1f,    1f,     2f,     2f,     0.5f,  1f }  // Fairy
 };
 
-
-    public string pookiemonName = "";
-    public Sprite sprite;
+    [SerializeField] private PookiemonSO pookiemonData;
+    public PookiemonSO PookiemonData { get { return pookiemonData; } }
     [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] StatMap baseStats;
     StatMap stats = new StatMap();
     StatMap statChanges = new StatMap();
     public static int LEVEL = 50;
-    [SerializeField] Types type1;
-    [SerializeField] Types type2;
     [SerializeField] List<Move> moves;
     public List<Move> Moves { get { return moves; } }
     [HideInInspector] public float accuracyStage = 0;
@@ -66,7 +75,6 @@ public class Pookiemon : MonoBehaviour
     [HideInInspector] public bool cantMove = false;
 
     [Header("Audio")]
-    [SerializeField] public AudioClip pookiemonCrySFX;
     [SerializeField] private AudioSource cryAudioSource;
     
 
@@ -79,9 +87,9 @@ public class Pookiemon : MonoBehaviour
 
     public void playPookiemonSpawn()
     {
-        if (cryAudioSource != null && pookiemonCrySFX != null)
+        if (cryAudioSource != null && pookiemonData.pookiemonCrySFX != null)
         {
-            cryAudioSource.clip = pookiemonCrySFX;
+            cryAudioSource.clip = pookiemonData.pookiemonCrySFX;
             cryAudioSource.Play();
         }
         else
@@ -93,9 +101,9 @@ public class Pookiemon : MonoBehaviour
 
     public void playPookiemonDie()
     {
-        if (cryAudioSource != null && pookiemonCrySFX != null)
+        if (cryAudioSource != null && pookiemonData.pookiemonCrySFX != null)
         {
-            cryAudioSource.clip = pookiemonCrySFX;
+            cryAudioSource.clip = pookiemonData.pookiemonCrySFX;
             cryAudioSource.pitch = Mathf.Pow(1.06f, -6);
             cryAudioSource.Play();
         } else
@@ -152,13 +160,13 @@ public class Pookiemon : MonoBehaviour
 
     public void Init()
     {
-        spriteRenderer.sprite = sprite;
-        foreach (Stats s in baseStats.Keys)
+        spriteRenderer.sprite = pookiemonData.sprite;
+        foreach (Stats s in pookiemonData.baseStats.Keys)
         {
-            stats[s] = LEVEL * ((baseStats[s] / 50) + 5);
+            stats[s] = LEVEL * ((pookiemonData.baseStats[s] / 50) + 5);
         }
 
-        stats[Stats.HP] = LEVEL + 50 + baseStats[Stats.HP];
+        stats[Stats.HP] = LEVEL + 50 + pookiemonData.baseStats[Stats.HP];
 
         currentHealth = stats[Stats.HP];
         for(int i = 0; i < 6; i++)
@@ -195,11 +203,11 @@ public class Pookiemon : MonoBehaviour
     public int TakePhysicalDamage(Pookiemon attacker, Attack attack)
     {
         //Super Effectiveness
-        float multiplier = GetMultiplier(attack.type, type1, type2);
+        float multiplier = GetMultiplier(attack.type, pookiemonData.type1, pookiemonData.type2);
         //Crit
         if(RollCrit(attack)) { multiplier *= 1.5f; }
         //STAB
-        if(attack.type == type1 || attack.type == type2) { multiplier *= 1.5f; }
+        if(attack.type == pookiemonData.type1 || attack.type == pookiemonData.type2) { multiplier *= 1.5f; }
         int damage = (int)(multiplier * (2*LEVEL/5 +2) * attack.POWER * attacker.GetStat(Stats.ATTACK) / GetStat(Stats.DEFENSE) / 50);
         Debug.Log("Damage: " + damage);
         int healthLost = Mathf.Clamp(damage, currentHealth, damage);
@@ -210,11 +218,11 @@ public class Pookiemon : MonoBehaviour
     public int TakeSpecialDamage(Pookiemon attacker, Attack attack)
     {
         //Super Effectiveness
-        float multiplier = GetMultiplier(attack.type, type1, type2);
+        float multiplier = GetMultiplier(attack.type, pookiemonData.type1, pookiemonData.type2);
         //Crit
         if (RollCrit(attack)) { multiplier *= 1.5f; }
         //STAB
-        if (attack.type == type1 || attack.type == type2) { multiplier *= 1.5f; }
+        if (attack.type == pookiemonData.type1 || attack.type == pookiemonData.type2) { multiplier *= 1.5f; }
         int damage = (int)(multiplier * (2 * LEVEL / 5 + 2) * attack.POWER * attacker.GetStat(Stats.SPATTACK) / GetStat(Stats.SPDEFENSE) / 50);
         Debug.Log("Damage: " + damage);
         int healthLost = Mathf.Clamp(damage, currentHealth, damage);
@@ -225,11 +233,11 @@ public class Pookiemon : MonoBehaviour
     public int TakeBodyPressDamage(Pookiemon attacker, Attack attack)
     {
         //Super Effectiveness
-        float multiplier = GetMultiplier(attack.type, type1, type2);
+        float multiplier = GetMultiplier(attack.type, pookiemonData.type1, pookiemonData.type2);
         //Crit
         if (RollCrit(attack)) { multiplier *= 1.5f; }
         //STAB
-        if (attack.type == type1 || attack.type == type2) { multiplier *= 1.5f; }
+        if (attack.type == pookiemonData.type1 || attack.type == pookiemonData.type2) { multiplier *= 1.5f; }
         int damage = (int)(multiplier * (2 * LEVEL / 5 + 2) * attack.POWER * attacker.GetStat(Stats.DEFENSE) / GetStat(Stats.DEFENSE) / 50);
         Debug.Log("Damage: " + damage);
         int healthLost = Mathf.Clamp(damage, currentHealth, damage);

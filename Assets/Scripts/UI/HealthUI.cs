@@ -13,7 +13,7 @@ public class HealthUI : MonoBehaviour
 
     public void Init(Pookiemon pookie)
     {
-        nameText.text = pookie.pookiemonName;
+        nameText.text = pookie.PookiemonData.pookiemonName;
         levelText.text = $"{levelLabel}{Pookiemon.LEVEL}";
 
         healthbar.maxValue = pookie.GetStat(Stats.HP);
