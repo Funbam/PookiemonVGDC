@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 081e509d5df8f7d4eb219d1c7cd988c6, type: 3}
   pookiemonName: Dittwo
-  pookiemonTitle: 
+  pookiemonTitle: Duplicity
   type1: 0
   type2: 18
-  height: 1
-  weight: 1
-  habitat: 0
-  description: 
+  height: 1.1
+  weight: 21.8
+  habitat: 8
+  description: It finds humor in pranking other Pookiemon with such fear that it
+    will dedicate a majority of its life to studying its behaviors.
   baseStats:
     m_keys: 000000000100000002000000030000000400000005000000
     m_values: 550000005300000053000000530000005300000053000000

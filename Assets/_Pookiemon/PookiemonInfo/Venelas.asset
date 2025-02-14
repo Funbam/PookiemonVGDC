@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: a2a604351b4dc5a44b9a19d5714ec358, type: 3}
   pookiemonName: Venelas
-  pookiemonTitle: 
+  pookiemonTitle: Nuclear Core
   type1: 10
   type2: 7
-  height: 1
-  weight: 1
-  habitat: 0
-  description: 
+  height: 0.2
+  weight: 6.2
+  habitat: 8
+  description: Strange lustrous formations thought to be of mineral were identified
+    as radioactive material. This material became known as Venelas, capable of controlling
+    radiation emissions from its core using its dish-like helmet.
   baseStats:
     m_keys: 000000000100000002000000030000000400000005000000
     m_values: 640000007800000032000000280000000a000000b4000000

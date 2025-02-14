@@ -20,7 +20,7 @@ MonoBehaviour:
   height: 1
   weight: 45.4
   habitat: 7
-  description: This pookimon has a bourgeois laugh. It will release lethargic spores
+  description: This Pookimon has a bourgeois laugh. It will release lethargic spores
     to poison its enemy if it feels threatened. While doing that, Monsieuroom remains
     its composure.
   baseStats:

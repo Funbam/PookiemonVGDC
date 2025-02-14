@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 671651bec0bd7b84a82da071f0701403, type: 3}
   pookiemonName: Gneirdoom
-  pookiemonTitle: 
+  pookiemonTitle: Supracrustal
   type1: 13
   type2: 12
-  height: 1
-  weight: 1
-  habitat: 0
-  description: 
+  height: 0.7
+  weight: 500
+  habitat: 8
+  description: It is rumored that Gneirdoom spawn from exposed mineral pockets where
+    earthquakes occur. Staring into its eyes for too long will cause the victim to
+    experience visions from a primordial past.
   baseStats:
     m_keys: 000000000100000002000000030000000400000005000000
     m_values: 82000000550000005a000000370000005a00000032000000

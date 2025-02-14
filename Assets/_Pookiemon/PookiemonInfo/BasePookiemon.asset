@@ -20,7 +20,7 @@ MonoBehaviour:
   height: 3
   weight: 6
   habitat: 7
-  description: 
+  description: It's a little guy. They are a scrumptious, little guy!
   baseStats:
     m_keys: 000000000100000002000000030000000400000005000000
     m_values: 640000006400000064000000640000006400000064000000

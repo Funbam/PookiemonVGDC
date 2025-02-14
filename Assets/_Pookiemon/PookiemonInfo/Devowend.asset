@@ -21,9 +21,9 @@ MonoBehaviour:
   weight: 99.8
   habitat: 1
   description: Formed from the souls of humans that perished under the thick fogs
-    in forests, Devowend seek to hunt and eat. Devowend are territorial and fight
-    any unfamiliar Devowend that enters their territory. Devowend shed constantly
-    and their fur makes for protective coats against harsh snow storms.
+    in forests, Devowend seek to hunt and eat. It is territorial and fights any unfamiliar
+    Devowend that enters its territory. It sheds constantly, and their fur is used
+    for protective coats against snow storms.
   baseStats:
     m_keys: 000000000100000002000000030000000400000005000000
     m_values: 37000000780000003c000000690000003c00000064000000
