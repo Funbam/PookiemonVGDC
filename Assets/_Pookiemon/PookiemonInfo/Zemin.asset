@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 5720b28b005267b4e88f6d04253666ed, type: 3}
   pookiemonName: Zemin
-  pookiemonTitle: Head Beetle
+  pookiemonTitle: Plated Chitin
   type1: 11
   type2: 18
-  height: 0.3
-  weight: 6.8
+  height: 0.5
+  weight: 5
   habitat: 1
-  description: It aimlessly floats around the tree tops before striking its prey,
-    lifting them into the air in the process.
+  description: It is strong enough to carry items on top of it. Even children who
+    reach the coming-of-age of being a Pookiemon Trainer can still fit on top.
   baseStats:
     m_keys: 000000000100000002000000030000000400000005000000
     m_values: 50000000640000007d0000000f0000004600000064000000
