@@ -13,32 +13,56 @@ PrefabInstance:
       value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: user
+      value: 
+      objectReference: {fileID: 8541792145269272978}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: power
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: movePP
-      value: 15
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: accuracy
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
-      value: Iron Defense
+      value: Bullet Punch
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: priority
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: critChance
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type
-      value: 16
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: power
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: movePP
-      value: 10
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: accuracy
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
-      value: Heavy Slam
+      value: Cross Chop
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: critChance
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: damageType
@@ -100,6 +124,14 @@ PrefabInstance:
       propertyPath: pookiemonCrySFX
       value: 
       objectReference: {fileID: 8300000, guid: a2f6d7418235a074ab1288a67c49b6bc, type: 3}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[2]
+      value: 
+      objectReference: {fileID: 145024871380562066}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[3]
+      value: 
+      objectReference: {fileID: -6091678855741185156}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[1]
       value: 30
@@ -181,7 +213,7 @@ PrefabInstance:
       addedObject: {fileID: 145024871380562066}
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 256143060865354344}
+      addedObject: {fileID: -6091678855741185156}
   m_SourcePrefab: {fileID: 100100000, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
 --- !u!82 &1380597792378831485 stripped
 AudioSource:
@@ -225,7 +257,7 @@ MonoBehaviour:
   damageType: 0
   power: 80
   critChance: 0
---- !u!114 &256143060865354344
+--- !u!114 &-6091678855741185156
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -234,15 +266,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 9210569789338471589}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
+  m_Script: {fileID: 11500000, guid: 17d76f31d5f0f5a40a1dafe4183afcfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveName: Guard
+  moveName: Iron Defense
   accuracy: 100
   user: {fileID: 8541792145269272978}
-  type: 6
-  movePP: 10
-  priority: 2
+  type: 16
+  movePP: 15
+  priority: 0
   damageType: 0
   power: 0
-  critChance: 0
+  critChance: 4
+  effectsToApply:
+  - statToMod: 2
+    increment: 2
+    chance: 100
+  accuracyChange: 0
