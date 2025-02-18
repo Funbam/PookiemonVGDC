@@ -25,6 +25,10 @@ PrefabInstance:
       value: Bitter Malice
       objectReference: {fileID: 0}
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: critChance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: damageType
       value: 1
       objectReference: {fileID: 0}
@@ -43,6 +47,10 @@ PrefabInstance:
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
       value: Leech Life
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: critChance
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_Sprite
@@ -232,7 +240,7 @@ MonoBehaviour:
   priority: 0
   damageType: 0
   power: 50
-  critChance: 0
+  critChance: 4
 --- !u!114 &2470452556242375296
 MonoBehaviour:
   m_ObjectHideFlags: 0
