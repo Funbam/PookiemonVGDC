@@ -125,13 +125,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: a2f6d7418235a074ab1288a67c49b6bc, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      propertyPath: moves.Array.data[2]
+      propertyPath: moves.Array.data[0]
+      value: 
+      objectReference: {fileID: 6257974618926324379}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[1]
       value: 
       objectReference: {fileID: 145024871380562066}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[2]
+      value: 
+      objectReference: {fileID: 1598718659112319425}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moves.Array.data[3]
       value: 
-      objectReference: {fileID: -6091678855741185156}
+      objectReference: {fileID: 806213138778673145}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[1]
       value: 30
@@ -204,7 +212,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+    - {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -213,7 +223,13 @@ PrefabInstance:
       addedObject: {fileID: 145024871380562066}
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -6091678855741185156}
+      addedObject: {fileID: 6257974618926324379}
+    - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1598718659112319425}
+    - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 806213138778673145}
   m_SourcePrefab: {fileID: 100100000, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
 --- !u!82 &1380597792378831485 stripped
 AudioSource:
@@ -256,8 +272,54 @@ MonoBehaviour:
   priority: 0
   damageType: 0
   power: 80
-  critChance: 0
---- !u!114 &-6091678855741185156
+  critChance: 4
+--- !u!114 &6257974618926324379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9210569789338471589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92fa8e04bd0d75740bb2daa9f47a331e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveName: Iron Defense
+  accuracy: 100
+  user: {fileID: 8541792145269272978}
+  type: 16
+  movePP: 15
+  priority: 0
+  stageAmount: 3
+  stat: 2
+--- !u!114 &1598718659112319425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9210569789338471589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40cde92995ec67d40beedaa03bb7486e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveName: Meteor Mash
+  accuracy: 90
+  user: {fileID: 8541792145269272978}
+  type: 16
+  movePP: 10
+  priority: 0
+  damageType: 0
+  power: 90
+  critChance: 4
+  effectsToApply:
+  - statToMod: 1
+    increment: 1
+    chance: 0.2
+  accuracyChange: 0
+--- !u!114 &806213138778673145
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -269,17 +331,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17d76f31d5f0f5a40a1dafe4183afcfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveName: Iron Defense
+  moveName: Bulk Up
   accuracy: 100
   user: {fileID: 8541792145269272978}
-  type: 16
-  movePP: 15
+  type: 6
+  movePP: 20
   priority: 0
   damageType: 0
   power: 0
-  critChance: 4
+  critChance: 0
   effectsToApply:
+  - statToMod: 1
+    increment: 1
+    chance: 1
   - statToMod: 2
-    increment: 2
-    chance: 100
+    increment: 1
+    chance: 1
   accuracyChange: 0

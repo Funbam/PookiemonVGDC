@@ -230,14 +230,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveName: Dragon Tail
+  moveName: Dragon Claw
   accuracy: 90
   user: {fileID: 8683674391443034199}
   type: 14
-  movePP: 10
+  movePP: 15
   priority: 0
   damageType: 0
-  power: 60
+  power: 80
   critChance: 4
 --- !u!114 &8683674391443034199 stripped
 MonoBehaviour:

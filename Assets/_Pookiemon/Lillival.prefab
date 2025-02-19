@@ -105,13 +105,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 01464b6cdb1ca5343a01f1cff6b25e48, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[0]
+      value: 
+      objectReference: {fileID: 5064823237167447016}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[1]
+      value: 
+      objectReference: {fileID: 593986868403597458}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moves.Array.data[2]
       value: 
-      objectReference: {fileID: 8888365642189242470}
+      objectReference: {fileID: 1500006694457115931}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moves.Array.data[3]
       value: 
-      objectReference: {fileID: 357868161526545054}
+      objectReference: {fileID: 5376774395299276318}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[0]
       value: 80
@@ -180,16 +188,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+    - {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8888365642189242470}
+      addedObject: {fileID: 5064823237167447016}
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 357868161526545054}
+      addedObject: {fileID: 593986868403597458}
+    - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1500006694457115931}
+    - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5376774395299276318}
   m_SourcePrefab: {fileID: 100100000, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
 --- !u!82 &2270230539672444901 stripped
 AudioSource:
@@ -201,7 +217,59 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
   m_PrefabInstance: {fileID: 4075155458590206385}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8888365642189242470
+--- !u!114 &5064823237167447016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8321280647044813117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d76f31d5f0f5a40a1dafe4183afcfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveName: Energy Ball
+  accuracy: 100
+  user: {fileID: 8800929182377421834}
+  type: 3
+  movePP: 10
+  priority: 0
+  damageType: 1
+  power: 90
+  critChance: 4
+  effectsToApply:
+  - statToMod: 4
+    increment: -1
+    chance: 0.1
+  accuracyChange: 0
+--- !u!114 &593986868403597458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8321280647044813117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d76f31d5f0f5a40a1dafe4183afcfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveName: Cotton Spore
+  accuracy: 100
+  user: {fileID: 8800929182377421834}
+  type: 3
+  movePP: 40
+  priority: 0
+  damageType: 1
+  power: 0
+  critChance: 0
+  effectsToApply:
+  - statToMod: 5
+    increment: -2
+    chance: 100
+  accuracyChange: 0
+--- !u!114 &1500006694457115931
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -213,16 +281,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveName: Fly
-  accuracy: 95
+  moveName: Dazzling Gleam
+  accuracy: 100
   user: {fileID: 8800929182377421834}
-  type: 9
-  movePP: 15
+  type: 17
+  movePP: 10
   priority: 0
-  damageType: 0
-  power: 90
+  damageType: 1
+  power: 80
   critChance: 4
---- !u!114 &357868161526545054
+--- !u!114 &5376774395299276318
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,15 +299,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 8321280647044813117}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a61d95fb8894b44a92662aa335d646e, type: 3}
+  m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveName: Stun Spore
-  accuracy: 75
+  moveName: Aerial Ace
+  accuracy: 100
   user: {fileID: 8800929182377421834}
-  type: 3
-  movePP: 30
+  type: 9
+  movePP: 20
   priority: 0
+  damageType: 0
+  power: 60
+  critChance: 4
 --- !u!114 &8800929182377421834 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
