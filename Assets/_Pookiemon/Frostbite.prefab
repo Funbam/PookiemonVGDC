@@ -13,24 +13,44 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: power
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: movePP
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
       value: Poison Fang
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: critChance
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: power
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: movePP
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
       value: Ice Fang
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: critChance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: damageType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_Sprite
@@ -67,11 +87,11 @@ PrefabInstance:
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moves.Array.data[2]
       value: 
-      objectReference: {fileID: 4299623662819316946}
+      objectReference: {fileID: 4800672689201555980}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moves.Array.data[3]
       value: 
-      objectReference: {fileID: 6367355822297894625}
+      objectReference: {fileID: 2332599200223181840}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[0]
       value: 101
@@ -146,10 +166,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4299623662819316946}
+      addedObject: {fileID: 4800672689201555980}
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6367355822297894625}
+      addedObject: {fileID: 2332599200223181840}
   m_SourcePrefab: {fileID: 100100000, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
 --- !u!114 &2608521577297929893 stripped
 MonoBehaviour:
@@ -167,7 +187,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
   m_PrefabInstance: {fileID: 7394249472197403422}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4299623662819316946
+--- !u!114 &4800672689201555980
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,19 +196,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 3272808864734583698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
+  m_Script: {fileID: 11500000, guid: 17d76f31d5f0f5a40a1dafe4183afcfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveName: Super Fang
-  accuracy: 100
+  moveName: Crush Claw
+  accuracy: 95
   user: {fileID: 2608521577297929893}
   type: 0
-  movePP: 5
+  movePP: 10
   priority: 0
   damageType: 0
-  power: 0
-  critChance: 0
---- !u!114 &6367355822297894625
+  power: 75
+  critChance: 4
+  effectsToApply:
+  - statToMod: 2
+    increment: -1
+    chance: 0.5
+  accuracyChange: 0
+--- !u!114 &2332599200223181840
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -197,18 +222,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 3272808864734583698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
+  m_Script: {fileID: 11500000, guid: 17d76f31d5f0f5a40a1dafe4183afcfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveName: Crunch
   accuracy: 100
   user: {fileID: 2608521577297929893}
   type: 15
-  movePP: 5
+  movePP: 15
   priority: 0
   damageType: 0
-  power: 0
-  critChance: 0
+  power: 80
+  critChance: 4
+  effectsToApply:
+  - statToMod: 2
+    increment: -1
+    chance: 0.2
+  accuracyChange: 0
 --- !u!82 &4724557889163367754 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 2813807389586241108, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}

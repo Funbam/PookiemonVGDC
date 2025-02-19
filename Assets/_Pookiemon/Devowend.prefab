@@ -34,7 +34,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type
-      value: 11
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: user
@@ -45,12 +45,20 @@ PrefabInstance:
       value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: movePP
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
-      value: Leech Life
+      value: Iron Head
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: critChance
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: damageType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_Sprite
@@ -91,19 +99,19 @@ PrefabInstance:
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moves.Array.data[0]
       value: 
-      objectReference: {fileID: 2470452556242375296}
+      objectReference: {fileID: 131452318126249686}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moves.Array.data[1]
       value: 
-      objectReference: {fileID: 1422001826671826905}
+      objectReference: {fileID: 2470452556242375296}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moves.Array.data[2]
       value: 
-      objectReference: {fileID: 131452318126249686}
+      objectReference: {fileID: 8777194857224997705}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moves.Array.data[3]
       value: 
-      objectReference: {fileID: -4123011914085275898}
+      objectReference: {fileID: 3723746277656557268}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[0]
       value: 55
@@ -172,31 +180,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      insertIndex: 4
-      addedObject: {fileID: -4123011914085275898}
-    - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-      insertIndex: 5
+      insertIndex: 3
       addedObject: {fileID: 2470452556242375296}
+    - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8777194857224997705}
+    - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3723746277656557268}
   m_SourcePrefab: {fileID: 100100000, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
 --- !u!114 &131452318126249686 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
-  m_PrefabInstance: {fileID: 1982633999492818699}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5797619239776067463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1422001826671826905 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
   m_PrefabInstance: {fileID: 1982633999492818699}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5797619239776067463}
@@ -220,27 +221,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
   m_PrefabInstance: {fileID: 1982633999492818699}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &-4123011914085275898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5797619239776067463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveName: Iron Head
-  accuracy: 100
-  user: {fileID: 6425872662737412784}
-  type: 15
-  movePP: 5
-  priority: 0
-  damageType: 0
-  power: 50
-  critChance: 4
 --- !u!114 &2470452556242375296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,11 +241,63 @@ MonoBehaviour:
   priority: 0
   damageType: 0
   power: 80
-  critChance: 20
+  critChance: 4
   effectsToApply:
   - statToMod: 2
     increment: -1
-    chance: 100
+    chance: 0.2
+  accuracyChange: 0
+--- !u!114 &8777194857224997705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5797619239776067463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d76f31d5f0f5a40a1dafe4183afcfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveName: Icy Wind
+  accuracy: 100
+  user: {fileID: 6425872662737412784}
+  type: 5
+  movePP: 15
+  priority: 0
+  damageType: 1
+  power: 55
+  critChance: 4
+  effectsToApply:
+  - statToMod: 5
+    increment: -1
+    chance: 1
+  accuracyChange: 0
+--- !u!114 &3723746277656557268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5797619239776067463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d76f31d5f0f5a40a1dafe4183afcfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveName: Bitter Malice
+  accuracy: 100
+  user: {fileID: 6425872662737412784}
+  type: 13
+  movePP: 10
+  priority: 0
+  damageType: 1
+  power: 75
+  critChance: 4
+  effectsToApply:
+  - statToMod: 1
+    increment: -1
+    chance: 1
   accuracyChange: 0
 --- !u!114 &6425872662737412784 stripped
 MonoBehaviour:

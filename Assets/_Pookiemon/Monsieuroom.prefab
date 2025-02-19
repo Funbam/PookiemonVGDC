@@ -13,16 +13,48 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: power
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: movePP
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
       value: Sludge Bomb
       objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: critChance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: damageType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type
-      value: 7
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: power
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: movePP
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
-      value: Spore
+      value: Pound
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: critChance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: damageType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_Sprite
@@ -56,6 +88,14 @@ PrefabInstance:
       propertyPath: pookiemonCrySFX
       value: 
       objectReference: {fileID: 8300000, guid: d36e0762a11681e488689cf64e0032cc, type: 3}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[2]
+      value: 
+      objectReference: {fileID: 298826135324021855}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[3]
+      value: 
+      objectReference: {fileID: 5117118914160613253}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[0]
       value: 118
@@ -127,10 +167,78 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 298826135324021855}
+    - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5117118914160613253}
   m_SourcePrefab: {fileID: 100100000, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
 --- !u!82 &4363739513219551583 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 2813807389586241108, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
   m_PrefabInstance: {fileID: 1982633999492818699}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5797619239776067463 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+  m_PrefabInstance: {fileID: 1982633999492818699}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &298826135324021855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5797619239776067463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d76f31d5f0f5a40a1dafe4183afcfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveName: Cotton Spore
+  accuracy: 100
+  user: {fileID: 6425872662737412784}
+  type: 3
+  movePP: 40
+  priority: 0
+  damageType: 0
+  power: 0
+  critChance: 0
+  effectsToApply:
+  - statToMod: 5
+    increment: -2
+    chance: 1
+  accuracyChange: 0
+--- !u!114 &5117118914160613253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5797619239776067463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92fa8e04bd0d75740bb2daa9f47a331e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveName: Defense Curl
+  accuracy: 100
+  user: {fileID: 6425872662737412784}
+  type: 0
+  movePP: 40
+  priority: 0
+  stageAmount: 1
+  stat: 2
+--- !u!114 &6425872662737412784 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+  m_PrefabInstance: {fileID: 1982633999492818699}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5797619239776067463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d8278da15d42c41afc2138b7c76924, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

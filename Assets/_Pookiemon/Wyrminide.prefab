@@ -13,16 +13,44 @@ PrefabInstance:
       value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: power
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: movePP
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
-      value: Dragon Tail
+      value: Dragon Claw
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: critChance
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type
       value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: power
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: movePP
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
-      value: Quiver Dance
+      value: Barb Barrage
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: critChance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: damageType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3957436763054878614, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_Sprite
@@ -57,6 +85,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: cfa74a3d38a20d748bd59b2ebda54422, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[2]
+      value: 
+      objectReference: {fileID: 125944730220497260}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[3]
+      value: 
+      objectReference: {fileID: 5547511775919921821}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[0]
       value: 90
       objectReference: {fileID: 0}
@@ -82,7 +118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_Name
-      value: Wyrminide_H
+      value: Wyrminide
       objectReference: {fileID: 0}
     - target: {fileID: 5881426803419197635, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -130,10 +166,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6702186684413991067}
+      addedObject: {fileID: 125944730220497260}
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4567340895228300415}
+      addedObject: {fileID: 5547511775919921821}
   m_SourcePrefab: {fileID: 100100000, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
 --- !u!114 &2630207066176982536 stripped
 MonoBehaviour:
@@ -151,7 +187,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
   m_PrefabInstance: {fileID: 7363013060170697651}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6702186684413991067
+--- !u!114 &125944730220497260
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,19 +196,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 3303480192201814847}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
+  m_Script: {fileID: 11500000, guid: 40cde92995ec67d40beedaa03bb7486e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveName: Big Buzz
+  moveName: Quiver Dance
   accuracy: 100
   user: {fileID: 2630207066176982536}
-  type: 11
-  movePP: 5
+  type: 0
+  movePP: 20
   priority: 0
   damageType: 0
   power: 0
   critChance: 0
---- !u!114 &4567340895228300415
+  effectsToApply:
+  - statToMod: 3
+    increment: 1
+    chance: 100
+  - statToMod: 4
+    increment: 1
+    chance: 100
+  - statToMod: 5
+    increment: 1
+    chance: 100
+  accuracyChange: 0
+--- !u!114 &5547511775919921821
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -181,18 +228,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 3303480192201814847}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
+  m_Script: {fileID: 11500000, guid: 17d76f31d5f0f5a40a1dafe4183afcfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveName: Toxic Spikes
+  moveName: Bug Buzz
   accuracy: 100
   user: {fileID: 2630207066176982536}
   type: 0
   movePP: 10
   priority: 0
-  damageType: 0
-  power: 0
-  critChance: 0
+  damageType: 1
+  power: 90
+  critChance: 4
+  effectsToApply:
+  - statToMod: 4
+    increment: -1
+    chance: 0.1
+  accuracyChange: 0
 --- !u!82 &4693326645143109095 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 2813807389586241108, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}

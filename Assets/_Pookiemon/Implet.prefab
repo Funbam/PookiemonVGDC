@@ -101,13 +101,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: a642bfe4f4b52fb4aa3c0964be0060ba, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[0]
+      value: 
+      objectReference: {fileID: -7815600633788629981}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[1]
+      value: 
+      objectReference: {fileID: 4788522147925404647}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moves.Array.data[2]
       value: 
-      objectReference: {fileID: 7197415148021304017}
+      objectReference: {fileID: -3940598783663157506}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moves.Array.data[3]
       value: 
-      objectReference: {fileID: 6156449379148697931}
+      objectReference: {fileID: -369018278093611894}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[0]
       value: 60
@@ -176,23 +184,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+    - {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7197415148021304017}
+      addedObject: {fileID: -7815600633788629981}
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6156449379148697931}
+      addedObject: {fileID: 4788522147925404647}
+    - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -3940598783663157506}
+    - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -369018278093611894}
   m_SourcePrefab: {fileID: 100100000, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
 --- !u!1 &23290004213781708 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
   m_PrefabInstance: {fileID: 5450554875002350656}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7197415148021304017
+--- !u!114 &-7815600633788629981
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -201,16 +217,60 @@ MonoBehaviour:
   m_GameObject: {fileID: 23290004213781708}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a61d95fb8894b44a92662aa335d646e, type: 3}
+  m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveName: False Surrender
+  accuracy: 100
+  user: {fileID: 651527700815751675}
+  type: 15
+  movePP: 10
+  priority: 0
+  damageType: 0
+  power: 80
+  critChance: 4
+--- !u!114 &4788522147925404647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23290004213781708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveName: Scratch
+  accuracy: 100
+  user: {fileID: 651527700815751675}
+  type: 0
+  movePP: 35
+  priority: 0
+  damageType: 0
+  power: 40
+  critChance: 4
+--- !u!114 &-3940598783663157506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23290004213781708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92fa8e04bd0d75740bb2daa9f47a331e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveName: Hone Claws
   accuracy: 100
   user: {fileID: 651527700815751675}
-  type: 15
+  type: 0
   movePP: 15
   priority: 0
---- !u!114 &6156449379148697931
+  stageAmount: 1
+  stat: 1
+--- !u!114 &-369018278093611894
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -225,8 +285,8 @@ MonoBehaviour:
   moveName: Night Slash
   accuracy: 100
   user: {fileID: 651527700815751675}
-  type: 0
-  movePP: 70
+  type: 15
+  movePP: 15
   priority: 0
   damageType: 0
   power: 70

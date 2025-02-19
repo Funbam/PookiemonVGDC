@@ -10,19 +10,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type
-      value: 15
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: user
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: power
-      value: 65
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: movePP
-      value: 20
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: accuracy
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moveName
-      value: Knock-Off
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: critChance
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: type
@@ -89,13 +101,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 0bf9dfdcc1915184abda4368f393aab6, type: 3}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[0]
+      value: 
+      objectReference: {fileID: 6017850093832126772}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      propertyPath: moves.Array.data[1]
+      value: 
+      objectReference: {fileID: 3699973962287160659}
+    - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moves.Array.data[2]
       value: 
-      objectReference: {fileID: 8588012765753918568}
+      objectReference: {fileID: 1638660458003115406}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: moves.Array.data[3]
       value: 
-      objectReference: {fileID: 6189762259711276097}
+      objectReference: {fileID: 5118606883210816183}
     - target: {fileID: 4805044183930422715, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       propertyPath: baseStats.m_values.Array.data[0]
       value: 80
@@ -164,16 +184,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 592307183121248466, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+    - {fileID: 1896217967703667165, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8588012765753918568}
+      addedObject: {fileID: 6017850093832126772}
     - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6189762259711276097}
+      addedObject: {fileID: 3699973962287160659}
+    - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1638660458003115406}
+    - targetCorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5118606883210816183}
   m_SourcePrefab: {fileID: 100100000, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
 --- !u!114 &452631096294909753 stripped
 MonoBehaviour:
@@ -191,7 +219,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5473840459651692684, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
   m_PrefabInstance: {fileID: 4964905981555171970}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8588012765753918568
+--- !u!114 &6017850093832126772
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -203,16 +231,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveName: First Impression
+  moveName: Night Slash
+  accuracy: 100
+  user: {fileID: 452631096294909753}
+  type: 15
+  movePP: 15
+  priority: 0
+  damageType: 0
+  power: 70
+  critChance: 13
+--- !u!114 &3699973962287160659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085401913546889742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveName: Guillotine
+  accuracy: 30
+  user: {fileID: 452631096294909753}
+  type: 0
+  movePP: 5
+  priority: 0
+  damageType: 0
+  power: 999
+  critChance: 4
+--- !u!114 &1638660458003115406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085401913546889742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveName: Attack Order
   accuracy: 100
   user: {fileID: 452631096294909753}
   type: 11
-  movePP: 10
-  priority: 2
+  movePP: 15
+  priority: 0
   damageType: 0
   power: 90
-  critChance: 0
---- !u!114 &6189762259711276097
+  critChance: 13
+--- !u!114 &5118606883210816183
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,15 +294,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e2ca4c44441bc4ca5cbaa581756fe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveName: Rollout
-  accuracy: 90
+  moveName: Mega Kick
+  accuracy: 75
   user: {fileID: 452631096294909753}
   type: 0
-  movePP: 20
+  movePP: 5
   priority: 0
   damageType: 0
-  power: 30
-  critChance: 0
+  power: 120
+  critChance: 4
 --- !u!82 &7199643125540115670 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 2813807389586241108, guid: 0c2d87d62567ba94b8dd960a6a7b3ed3, type: 3}
