@@ -83,9 +83,11 @@ public class BattleSystem : MonoBehaviour
     {
         TurnStart?.Invoke();
         actions[0].ApplyAction();
+        yield return new WaitUntil(() => actions[0].isAnimationDone());
         playerHUD.ShowNarration(actions[0].NarrationLine, true);
         yield return new WaitForSeconds(setUpBattleTime);
         actions[1].ApplyAction();
+        yield return new WaitUntil(() => actions[1].isAnimationDone());
         playerHUD.ShowNarration(actions[1].NarrationLine);
         TurnEnd?.Invoke();
         yield return new WaitForSeconds(setUpBattleTime);

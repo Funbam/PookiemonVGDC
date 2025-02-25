@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 // for when a pookiemon uses a move (both hits and misses)
 public class BattleMoveAction : BattleAction
@@ -31,11 +32,13 @@ public class BattleMoveAction : BattleAction
             string extra = move.UseMove(opposingPlayer.Pookiemon);
             opposingPlayer.HealthUi.SetHealth(opposingPlayer.Pookiemon.CurrentHealth);
             narrationLine = $"{activePlayer.Pookiemon.PookiemonData.pookiemonName} used {move.moveName} on {opposingPlayer.Pookiemon.PookiemonData.pookiemonName}. " + extra;
-            
+            seq?.Play();
         }
         else
         {
             narrationLine = $"{activePlayer.Pookiemon.PookiemonData.pookiemonName} missed.";
         }
     }
+
+    
 }

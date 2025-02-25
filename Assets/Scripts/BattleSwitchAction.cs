@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class BattleSwitchAction : BattleAction
 {
@@ -16,5 +17,6 @@ public class BattleSwitchAction : BattleAction
     {
         activePlayer.SwitchPookie(switchin);
         activePlayer.HealthUi.Init(activePlayer.Pookiemon);
+        seq?.Play();
     }
 }

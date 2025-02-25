@@ -1,9 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-
+using DG.Tweening;
 
 // just a base class
 public class BattleAction : IComparable<BattleAction>
@@ -12,6 +11,15 @@ public class BattleAction : IComparable<BattleAction>
     protected Player opposingPlayer;
     protected string narrationLine;
     public string NarrationLine { get { return narrationLine; } }
+    
+    protected Sequence seq;
+
+    public bool isAnimationDone()
+    {
+        return !seq.IsActive();
+    }
+
+
 
     public virtual void SetAction(Player _active, Player _target)
     {
