@@ -16,7 +16,7 @@ public class BattleAction : IComparable<BattleAction>
 
     public bool isAnimationDone()
     {
-        return !seq.IsActive();
+        return seq == null || !seq.IsActive();
     }
 
 
