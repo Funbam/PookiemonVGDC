@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 [Serializable]
 public class StatMap : SerializableDictionary<Stats, int> { }
@@ -212,6 +213,16 @@ public class Pookiemon : MonoBehaviour
         Debug.Log("Damage: " + damage);
         int healthLost = Mathf.Clamp(damage, currentHealth, damage);
         currentHealth -= damage;
+
+        if (damage >0)
+        {
+            Sequence s = DOTween.Sequence();
+            s.Append(transform.DOScaleY(0.8f, 0.5f));
+            s.Append(transform.DOScaleY(1f, 0.5f));
+            s.Play();
+
+        }
+
         return healthLost;
     }
 
@@ -235,13 +246,32 @@ public class Pookiemon : MonoBehaviour
         //Super Effectiveness
         float multiplier = GetMultiplier(attack.type, pookiemonData.type1, pookiemonData.type2);
         //Crit
-        if (RollCrit(attack)) { multiplier *= 1.5f; }
+        bool crit = false;
+        if (RollCrit(attack)) { multiplier *= 1.5f; crit = true; }
         //STAB
         if (attack.type == pookiemonData.type1 || attack.type == pookiemonData.type2) { multiplier *= 1.5f; }
         int damage = (int)(multiplier * (2 * LEVEL / 5 + 2) * attack.POWER * attacker.GetStat(Stats.DEFENSE) / GetStat(Stats.DEFENSE) / 50);
         Debug.Log("Damage: " + damage);
         int healthLost = Mathf.Clamp(damage, currentHealth, damage);
         currentHealth -= damage;
+
+        if (crit)
+        {
+            Sequence s = DOTween.Sequence();
+            s.Append(transform.DOScale(Vector3.one * 0.3f, 0.5f).SetEase(Ease.OutBounce));
+            s.Append(transform.DOScale(Vector3.one, 0.5f));
+            s.Play();
+        }
+
+        else if (damage > 0)
+        {
+            Sequence s = DOTween.Sequence();
+            s.Append(transform.DOScaleY(0.8f, 0.5f).SetEase(Ease.OutBounce));
+            s.Append(transform.DOScaleY(1f, 0.5f));
+            s.Play();
+
+        }
+
         return healthLost;
     }
 
