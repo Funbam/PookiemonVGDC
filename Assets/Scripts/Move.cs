@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Move : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Move : MonoBehaviour
     public int movePP;
     protected int currentPP;
     public int priority;
+
+    protected Sequence seq;
 
     private void Awake()
     {
