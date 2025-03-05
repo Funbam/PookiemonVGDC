@@ -237,12 +237,16 @@ public class BattleSystem : MonoBehaviour
             && currentState != BattleState.P1SWITCH && currentState != BattleState.P2SWITCH)
             return;
 
-        if (currentState == BattleState.P1SWITCH || currentState == BattleState.P2SWITCH)
-            currentPlayer.HealthUi.Init(p);
-
         BattleSwitchAction action = new BattleSwitchAction();
         action.SetAction(currentPlayer, currentPlayer == player1 ? player2 : player1, p);
         currentPlayer.currentMove = action;
+
+        // if switching in from pookiemon death, apply the action here
+        if (currentState == BattleState.P1SWITCH || currentState == BattleState.P2SWITCH)
+        {
+            action.ApplyAction();
+        }
+
         NextPhase();
     }
 }
